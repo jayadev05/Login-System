@@ -1,0 +1,86 @@
+<%- include('header') %>
+
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark mb-5">
+    <div class="container">
+      <!-- nav-left -->
+      <a class="navbar-brand" href="#">Uber</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse menu-bg" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ham-menu ">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Ride</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Drive</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Impact</a></li>           
+              <li><a class="dropdown-item" href="#">Our Oferrings</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+        <!-- nav-right -->
+        <div class="ham-menu justify-content-end flex-column ">
+          <a class="text-decoration-none text-white m-2 " href="">EN</a>
+          <a class="text-decoration-none text-white m-2" href="">Help</a>
+          <a class="bg-white text-black p-2 rounded-pill text-decoration-none " href="/route/login">Sign Out</a>
+        </div>
+       
+          
+      </div>
+    </div>
+    </nav>
+  <!-- Hero section -->
+    <section class="container-fluid  bg-black pt-3">
+      <div class="container bg-black main-ctr">
+        <div class="row mx-auto">
+          <!-- section main content -->
+          <div class="col-md-6 bg-black d-flex  justify-content-center flex-column ">
+            
+            <div class="container landscape-container">
+              <h1 class=" landscape-heading text-white">Go anywhere with Uber </h1>
+            </div>
+            <div class="custom-div">
+             <p class="h6 pb-3 pt-4 text-white">Request a ride, hop in, and go.</p>
+             
+             <div class="mb-3">
+              <div class="loc button-one my-3">
+                <div class="input-group  has-validation bg-white rounded-pill  button-one-in w-75">
+                  <span class="input-group-text bg-white " id="validationTooltipUsernamePrepend"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon"><title>search</title><path fill-rule="evenodd" clip-rule="evenodd" d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm5-2a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" fill="black"></path></svg></span>
+                  <input type="text" class="form-control border-start-0 border-end-0" placeholder="Enter location" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                  <span class="input-group-text bg-white" id="validationTooltipUsernamePrepend"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" tabindex="0" role="button" class="pe-location-fetch css-bOZeEP"><title>Navigate right up</title><path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="black"></path></svg></span>
+                </div>
+              </div>
+              <div class="loc button-one ">
+                <div class="input-group has-validation bg-white rounded-pill button-one-in w-75">
+                  <span class="input-group-text" id=" border-end-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon"><title>search</title><path fill-rule="evenodd" clip-rule="evenodd" d="M14 10h-4v4h4v-4ZM7 7v10h10V7H7Z" fill="currentColor"></path></svg></span>
+                  <input type="text" class="form-control border-start-0 border-end-0" placeholder="Enter destination" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                </div>
+              </div>
+             </div>
+             <button type="button" class="btn my-4 btn-secondary mb-5 bg-white text-dark px-4 py-2 " data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+              See prices
+            </button>
+            </div>
+          </div>
+          <!-- section image -->
+          <div class="col-md-6">
+           
+            <figure class="figure figure-right">
+              <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_873/v1684852612/assets/ba/4947c1-b862-400e-9f00-668f4926a4a2/original/Ride-with-Uber.png" class="figure-img img-fluid rounded" alt="...">
+            </figure>
+          </div>
+        </div>
+
+
+<%- include('footer') %>

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  /* background: rgb(231, 151, 60); */
+  background-color: black;
+  font-family: "Roboto";
+}
+a{
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+}
+
+
+.main {
+  background: url(/images/010\ Winter\ Neva.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: #fff;
+  /* padding: 50px; */
+  display: flex;
+}
+h1 {
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+}
+input {
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-left: 1rem;
+  height:2rem;
+}
+
+
+
+input:focus {
+  box-shadow: none;
+}
+
+
+input:focus:invalid {
+  outline-color: rgb(243, 170, 33);
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+input:valid {
+  outline-color: rgb(107, 201, 0);
+}
+
+
+
+@media (width>1000px) {
+  .row-css{
+    display: flex;
+    gap: 5rem;
+  }
+}

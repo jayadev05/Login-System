@@ -1,0 +1,34 @@
+<%- include('header') %>
+<div class="main">
+  <div class="white-bg container-fluid d-flex align-items-center justify-content-center w-75 my-5 p-3 main-con bg-white rounded-5">
+    <div class="row row-css w-100 d-flex flex-wrap justify-content-center">
+      <div class="col-lg-4 col-md-5 col-sm-7 col-12 pb-1 d-flex flex-column justify-content-center align-items-center border rounded-5 border-black mb-4">
+        <h1 class="mb-4 text-center">Login Page</h1>
+        <form class="d-flex flex-column w-100 px-3" action="/route/login" method="POST">
+          <label class="fw-bold" for="email">Email :</label>
+          <input class="mb-3 rounded-5 border border-black" type="email" name="email" id="email" required minlength="6" placeholder="Enter your email">
+          
+          <label class="fw-bold" for="password">Password :</label>
+          <input class="mb-3 border border-black rounded-5" type="password" name="password" id="password" minlength="8" required placeholder="Min 8 characters">
+          
+          <button type="submit" class="px-2 btn btn-dark">Login</button>
+
+        </form>
+        <% if(locals.logout) { %>
+          <div class="alert alert-warning text-center  mt-3"> 
+            Log Out Successful...! 
+          </div>
+        <% } %>
+        <% if(locals.error) { %>
+          <div class="alert alert-danger text-center  mt-3"> 
+           Invalid Username or password
+          </div>
+        <% } %>
+      </div>
+      <div class="col-lg-4 col-md-5 col-sm-7 col-12 d-flex justify-content-center align-items-center">
+        <img class="img-fluid" src="/images/subscribe.png" alt="Subscribe Image" />
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('footer') %>
